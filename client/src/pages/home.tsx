@@ -96,7 +96,9 @@ export default function Home() {
                 <div className="w-8 h-8 bg-gradient-to-r from-red-600 to-red-700 rounded-full flex items-center justify-center">
                   <Rocket className="h-5 w-5 text-white transform rotate-45" />
                 </div>
-                <h1 className="text-2xl font-black text-gray-900 tracking-wider">
+                <h1 className={`text-2xl font-black tracking-wider transition-colors ${
+                  navBackground ? "text-gray-900" : "text-white"
+                }`}>
                   SPACE<span className="text-red-600">Z</span>
                 </h1>
               </div>
@@ -104,18 +106,30 @@ export default function Home() {
             
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <button onClick={() => scrollToSection("home")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Home</button>
-                <button onClick={() => scrollToSection("about")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">About</button>
-                <button onClick={() => scrollToSection("services")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Services</button>
-                <button onClick={() => scrollToSection("projects")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Projects</button>
-                <button onClick={() => scrollToSection("contact")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Contact</button>
+                <button onClick={() => scrollToSection("home")} className={`font-medium transition-colors hover:text-red-600 ${
+                  navBackground ? "text-gray-900" : "text-white"
+                }`}>Home</button>
+                <button onClick={() => scrollToSection("about")} className={`font-medium transition-colors hover:text-red-600 ${
+                  navBackground ? "text-gray-900" : "text-white"
+                }`}>About</button>
+                <button onClick={() => scrollToSection("services")} className={`font-medium transition-colors hover:text-red-600 ${
+                  navBackground ? "text-gray-900" : "text-white"
+                }`}>Services</button>
+                <button onClick={() => scrollToSection("projects")} className={`font-medium transition-colors hover:text-red-600 ${
+                  navBackground ? "text-gray-900" : "text-white"
+                }`}>Projects</button>
+                <button onClick={() => scrollToSection("contact")} className={`font-medium transition-colors hover:text-red-600 ${
+                  navBackground ? "text-gray-900" : "text-white"
+                }`}>Contact</button>
               </div>
             </div>
             
             <div className="md:hidden">
               <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-900 hover:text-blue-600"
+                className={`transition-colors hover:text-red-600 ${
+                  navBackground ? "text-gray-900" : "text-white"
+                }`}
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
