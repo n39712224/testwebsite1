@@ -97,11 +97,11 @@ export default function Home() {
             
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <button onClick={() => scrollToSection("home")} className="text-gray-900 hover:text-blue-600 font-medium transition-colors">Home</button>
-                <button onClick={() => scrollToSection("about")} className="text-gray-900 hover:text-blue-600 font-medium transition-colors">About</button>
-                <button onClick={() => scrollToSection("services")} className="text-gray-900 hover:text-blue-600 font-medium transition-colors">Services</button>
-                <button onClick={() => scrollToSection("projects")} className="text-gray-900 hover:text-blue-600 font-medium transition-colors">Projects</button>
-                <button onClick={() => scrollToSection("contact")} className="text-gray-900 hover:text-blue-600 font-medium transition-colors">Contact</button>
+                <button onClick={() => scrollToSection("home")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Home</button>
+                <button onClick={() => scrollToSection("about")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">About</button>
+                <button onClick={() => scrollToSection("services")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Services</button>
+                <button onClick={() => scrollToSection("projects")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Projects</button>
+                <button onClick={() => scrollToSection("contact")} className="text-gray-900 hover:text-red-600 font-medium transition-colors">Contact</button>
               </div>
             </div>
             
@@ -124,11 +124,11 @@ export default function Home() {
             className="md:hidden bg-white border-b border-gray-200"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <button onClick={() => scrollToSection("home")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Home</button>
-              <button onClick={() => scrollToSection("about")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">About</button>
-              <button onClick={() => scrollToSection("services")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Services</button>
-              <button onClick={() => scrollToSection("projects")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Projects</button>
-              <button onClick={() => scrollToSection("contact")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Contact</button>
+              <button onClick={() => scrollToSection("home")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Home</button>
+              <button onClick={() => scrollToSection("about")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">About</button>
+              <button onClick={() => scrollToSection("services")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Services</button>
+              <button onClick={() => scrollToSection("projects")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Projects</button>
+              <button onClick={() => scrollToSection("contact")} className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-red-600">Contact</button>
             </div>
           </motion.div>
         )}
@@ -171,7 +171,7 @@ export default function Home() {
           >
             <Button 
               onClick={() => scrollToSection("services")}
-              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 text-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 shadow-2xl"
+              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 text-lg font-semibold hover:from-red-700 hover:to-red-800 transition-all transform hover:scale-105 shadow-2xl"
             >
               Explore Our Technology
             </Button>
@@ -222,7 +222,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className="text-3xl font-black text-blue-600 mb-2">50+</div>
+                  <div className="text-3xl font-black text-red-600 mb-2">50+</div>
                   <div className="text-sm font-medium text-gray-600">Successful Launches</div>
                 </motion.div>
                 <motion.div 
@@ -232,7 +232,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className="text-3xl font-black text-blue-600 mb-2">15</div>
+                  <div className="text-3xl font-black text-red-600 mb-2">15</div>
                   <div className="text-sm font-medium text-gray-600">Years Experience</div>
                 </motion.div>
                 <motion.div 
@@ -242,7 +242,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className="text-3xl font-black text-blue-600 mb-2">200+</div>
+                  <div className="text-3xl font-black text-red-600 mb-2">200+</div>
                   <div className="text-sm font-medium text-gray-600">Engineers</div>
                 </motion.div>
                 <motion.div 
@@ -252,7 +252,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className="text-3xl font-black text-blue-600 mb-2">99%</div>
+                  <div className="text-3xl font-black text-red-600 mb-2">99%</div>
                   <div className="text-sm font-medium text-gray-600">Success Rate</div>
                 </motion.div>
               </div>
@@ -268,8 +268,8 @@ export default function Home() {
               <motion.img 
                 animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Advanced spacecraft in orbit" 
+                src="https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Rocket launch with dramatic fire and smoke" 
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent rounded-2xl" />
@@ -310,9 +310,9 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-all cursor-pointer"
+                className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition-all cursor-pointer"
               >
-                <div className="text-blue-400 text-4xl mb-6">
+                <div className="text-red-400 text-4xl mb-6">
                   <service.icon className="h-10 w-10" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
@@ -550,7 +550,14 @@ export default function Home() {
                       <FormItem>
                         <FormLabel className="text-sm font-semibold text-gray-900">Company</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your organization" {...field} />
+                          <Input 
+                            placeholder="Your organization" 
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            value={field.value || ""}
+                            name={field.name}
+                            ref={field.ref}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -563,7 +570,7 @@ export default function Home() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel className="text-sm font-semibold text-gray-900">Project Type</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <Select onValueChange={field.onChange} value={field.value || ""}>
                           <FormControl>
                             <SelectTrigger>
                               <SelectValue placeholder="Select project type" />
