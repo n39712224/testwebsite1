@@ -92,7 +92,14 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center"
             >
-              <h1 className="text-2xl font-black text-gray-900">SpaceZ</h1>
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gradient-to-r from-red-600 to-red-700 rounded-full flex items-center justify-center">
+                  <Rocket className="h-5 w-5 text-white transform rotate-45" />
+                </div>
+                <h1 className="text-2xl font-black text-gray-900 tracking-wider">
+                  SPACE<span className="text-red-600">Z</span>
+                </h1>
+              </div>
             </motion.div>
             
             <div className="hidden md:block">
