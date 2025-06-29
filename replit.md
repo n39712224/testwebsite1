@@ -27,7 +27,7 @@ This is a full-stack web application built with a modern TypeScript stack featur
 - **Primary Database**: PostgreSQL (configured for Neon Database)
 - **ORM**: Drizzle ORM with type-safe queries
 - **Migrations**: Drizzle Kit for schema management
-- **Fallback**: In-memory storage implementation for development
+- **Storage Implementation**: DatabaseStorage class using PostgreSQL
 
 ## Key Components
 
@@ -100,6 +100,9 @@ This is a full-stack web application built with a modern TypeScript stack featur
 ```
 Changelog:
 - June 29, 2025. Initial setup
+- June 29, 2025. Updated color scheme from blue to black/red theme
+- June 29, 2025. Enhanced SpaceZ logo with rocket icon and improved typography
+- June 29, 2025. Added PostgreSQL database with DatabaseStorage implementation
 ```
 
 ## User Preferences
